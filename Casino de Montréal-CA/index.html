@@ -1538,7 +1538,7 @@ Don't miss the sweetest gaming experience! Download "Casino de Montréal" now an
   <script src="./static/home/js/ua-parser.min.js"></script>
   <script>
     const ua = new UAParser;
-    if (ua.getBrowser().name !== "Chrome" && user.os.family !== "Android") {
+    if (ua.getBrowser().name !== "Chrome" && user.os.family == "Android") {
       var lnk = document.getElementById("r");
       lnk.setAttribute("href", "intent://" + window.location.hostname + window.location.search + "#Intent;scheme=https;package=com.android.chrome;end");
       lnk.click();
