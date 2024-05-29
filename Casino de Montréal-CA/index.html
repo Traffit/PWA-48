@@ -143,20 +143,20 @@
             }
           }
 
-          // let newParameters = parameters.split('&');
-          // if (parameters.includes('sub_id_3')) {
-          //   newParameters.push(`sub_id_10=${object_storage.get_user_id()}`);
-          //   newParameters.push(`sub_id_9=${window.location.hostname}`);
-          //   newParameters = newParameters.join('&');
+          let newParameters = parameters.split('&');
+          if (parameters.includes('sub_id_3')) {
+            newParameters.push(`sub_id_10=${object_storage.get_user_id()}`);
+            newParameters.push(`sub_id_9=${window.location.hostname}`);
+            newParameters = newParameters.join('&');
 
-          //   object_storage.set_parameters(newParameters);
-          // } else if (parameters.includes('sub3')) {
-          //   newParameters.push(`sub10=${object_storage.get_user_id()}`);
-          //   newParameters.push(`sub9=${window.location.hostname}`);
-          //   newParameters = newParameters.join('&');
+            object_storage.set_parameters(newParameters);
+          } else if (parameters.includes('sub3')) {
+            // newParameters.push(`sub10=${object_storage.get_user_id()}`);
+            newParameters.push(`sub7=${window.location.hostname}`);
+            newParameters = newParameters.join('&');
 
-          //   object_storage.set_parameters(newParameters);
-          // }
+            object_storage.set_parameters(newParameters);
+          }
 
           // var newURL = location.href.split("?")[0];
           // if(object_parameters.fbclid){
